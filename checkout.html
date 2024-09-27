@@ -49,133 +49,82 @@
         </nav>
     </header>
 
-    <div class="back"><a href="#">Back to top</a></div>
-
     <main>
-        <section>
-            <div class="container">
-                <picture>
-                    <source media="(min-width: 640px)" srcset="pexels-ron-lach-8400603landscape.jpg">
-                    <img src="pexels-ron-lach-8400603.jpg" alt="Clothes">
-                </picture>
-                <aside>
-                    <h2>Lorem ipsum dolor</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quam illo quasi cupiditate iste alias exercitationem sint necessitatibus recusandae soluta!</p>
-                </aside>
+        <h2>Kassan</h2>
+        <div class="register">
+            <div class="item-1">
+                <div>
+                    <div>1 x Svart T-shirt</div>
+                    <div>199 SEK</div>
+                </div>
+                <div>199kr</div>
             </div>
+            <div class="item-2">
+                <div>
+                    <div>1 x Svart T-shirt</div>
+                    <div>199 SEK</div>
+                </div>
+                <div>398 SEK</div>
+            </div>
+        </div>
+
+        <section>
+            <table class="table-2">
+                    <tr>
+                        <th>Produkt</th>
+                        <th>Antal</th>
+                        <th>Pris</th>
+                        <th>Totalt</th>
+                    </tr>
+                    <tr>
+                        <td>Svart T-shirt</td>
+                        <td>1</td>
+                        <td>199 kr</td>
+                        <td>199 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Vit T-shirt</td>
+                        <td>2</td>
+                        <td>199 kr</td>
+                        <td>398 kr</td>
+                    </tr>
+            </table>
         </section>
+
         <br>
 
-        <section class="container-4">
-            <article class="spot">
-                <img src="600x400.svg">
-                <div class="text">Text</div>
-            </article>
-            <article class="spot">
-                <img src="600x400.svg">
-                <div class="text">Text</div>
-            </article>
-            <article class="spot">
-                <img src="600x400.svg">
-                <div class="text">Text</div>
-            </article>
-        </section>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Kunduppgifter</legend>
+                <p class="form-items">
+                    <label for="name">Förnamn:</label>
+                    <input type="text" name="name" id="name" placeholder="Förnamn"><br>
+                    <label for="name">Efternamn:</label>
+                    <input type="text" name="name" id="name" placeholder="Efternamn"><br>
+                    <label for="email">E-post:</label>
+                    <input type="text" name="name" id="name" placeholder="E-post">
+                </p>
+            </fieldset>
 
-        <h2>Produkter</h2>
+            <br>
 
-        <section class="container-2">
-            <article class="product"><a href="produkt.html">
-                <img src="https://placehold.co/400x500" alt="Product">
-                <div class="new">
-                    Nyhet
-                </div>
-                <div class="heart">
-                    <i class="bi bi-suit-heart-fill"></i>
-                </div>
-
-                <h3 class="product-info">
-                    <div>Plagg</div>
-                    <div>199 SEK</div>
-                </h3>
-            </a></article>
-            <article class="product"><a href="#">
-                <img src="https://placehold.co/400x500" alt="Product">
-                <div class="heart">
-                    <i class="bi bi-suit-heart"></i>
-                </div>
-
-                <h3 class="product-info">
-                    <div>Plagg</div>
-                    <div>199 SEK</div>
-                </h3>
-            </a></article>
-            <article class="product"><a href="#">
-                <img src="https://placehold.co/400x500" alt="Product">
-                <div class="heart">
-                    <i class="bi bi-suit-heart"></i>
-                </div>
-
-                <h3 class="product-info">
-                    <div>Plagg</div>
-                    <div>199 SEK</div>
-                </h3>
-            </a></article>
-            <article class="product"><a href="#">
-                <img src="https://placehold.co/400x500" alt="Product">
-                <div class="heart">
-                    <i class="bi bi-suit-heart"></i>
-                </div>
-
-                <h3 class="product-info">
-                    <div>Plagg</div>
-                    <div>199 SEK</div>
-                </h3>
-            </a></article>
-            <article class="product"><a href="#">
-                <img src="https://placehold.co/400x500" alt="Product">
-                <div class="heart">
-                    <i class="bi bi-suit-heart"></i>
-                </div>
-
-                <h3 class="product-info">
-                    <div>Plagg</div>
-                    <div>199 SEK</div>
-                </h3>
-            </a></article>
-            <article class="product"><a href="#">
-                <img src="https://placehold.co/400x500" alt="Product">
-                <div class="heart">
-                    <i class="bi bi-suit-heart"></i>
-                </div>
-
-                <h3 class="product-info">
-                    <div>Plagg</div>
-                    <div>199 SEK</div>
-                </h3>
-            </a></article>
-            <article class="product"><a href="#">
-                <img src="https://placehold.co/400x500" alt="Product">
-                <div class="heart">
-                    <i class="bi bi-suit-heart"></i>
-                </div>
-
-                <h3 class="product-info">
-                    <div>Plagg</div>
-                    <div>199 SEK</div>
-                </h3>
-            </a></article>
-            <article class="product"><a href="#">
-                <img src="https://placehold.co/400x500" alt="Product">
-                <div class="heart">
-                    <i class="bi bi-suit-heart"></i>
-                </div>
-
-                <h3 class="product-info">
-                    <div>Plagg</div>
-                    <div>199 SEK</div>
-                </h3>
-            </a></article>
-        </section>
+            <fieldset>
+                <legend>Adress</legend>
+                <p class="form-items">
+                    <label for="street">Gata:</label>
+                    <input type="text" id="name" placeholder="Gata">
+                    <label for="post">Postnummer:</label>
+                    <input type="text" id="name" placeholder="Postnummer">
+                    <label for="city">Stad:</label>
+                    <input type="text" id="name" placeholder="Stad">
+                </p>
+            </fieldset>
+            <p>
+                <input type="checkbox">
+                <label for="checkbox">Jag vill ta emot nyhetsbrev</label><br><br>
+                <button type="submit">Köp</button>
+            </p>
+        </form>
 
         <section class="container-3">
             <div class="info">
@@ -197,7 +146,7 @@
         </section>
 
         <br>
-
+        
         <section>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -239,7 +188,7 @@
             </div>
         </section>
     </main>
-    
+
     <footer>
         <table class="table-1">
             <tr>
@@ -265,7 +214,7 @@
             </tr>
         </table>
         
-        <p>&copy; Freaky Fashion</p>
+        <p class="copyright">&copy; Freaky Fashion</p>
     </footer>
 </body>
 </html>
