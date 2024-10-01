@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Administration</title>
+</head>
+<body>
+    <header>
+        <h3>Administration</h3>
+    </header>
+    <main>
+        <section>
+            <aside>
+                <h5>Produkter</h5>
+            </aside>
+            <div>
+                <div>
+                    <div class="items">
+                        <h4>Ny produkt</h4>
+                    </div>
+                </div>
+                <form action="https://httpbin.org/get" method="get">
+                    <p>
+                        <label for="name">Namn:</label><br>
+                        <input type="text" placeholder="Ange namn"><br><br>
+                        <label for="description">Beskrivning:</label><br>
+                        <textarea placeholder="Ange beskrivning"></textarea><br><br>
+                        <label for="button">Bild</label><br>
+
+                        <input class="file" type="file" accept="image/*"><br><br>
+
+                        <label for="name">SKU</label><br>
+                        <input type="text" placeholder="Ange SKU"
+                        pattern="[a-z]{3}[0-9]{3}" required><br><br>
+                        
+                        <label for="price">Pris</label><br>
+                        <input type="text"><br><br>
+                        <label for="date">Publiceringsdatum</label><br><br>
+                        <input type="date"><br><br>
+                        <label for="categories">Kategorier</label><br><br>
+                        <input type="checkbox">T-shirts<br>
+                        <input type="checkbox">Sommar<br>
+                        <input type="checkbox">Byxor<br>
+                        <input type="checkbox">Skor<br><br>
+                        <button class="btn" type="submit">Lägg till</button>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
