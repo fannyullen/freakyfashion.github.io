@@ -8,30 +8,45 @@ img {
 .hero {
     font-size: 1.2rem;
     text-align: end;
-    background-color: rgb(247, 183, 160);
-    border-bottom: coral;
+    background-color: rgb(251, 155, 120);
     position: fixed;
     width: 100%;
-    z-index: 10;
+    z-index: 20;
 }
 .header {
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
+    margin: 10px;
+}
+.logo-title {
+    position: relative;
+    z-index: 10;
+    font-size: 42px;
+    font-weight: lighter;
+}
+.logo {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.7;
+    z-index: -1;
 }
 .search-bar {
     border: dotted coral;
     background-color: hsl(16, 81%, 88%);
     border-radius: 10px;
     width: 100%;
-    margin: 10px;
 }
 .menu {
     display: flex;
     justify-content: space-evenly;
+    background: radial-gradient(hsl(16, 81%, 88%), white);
 }
 .menu > div {
-    padding: 5px;
+    padding: 10px;
 }
 .dropdown {
     position: relative;
@@ -42,8 +57,9 @@ img {
     position: absolute;
     display: none;
     background-color: white;
-    padding: 1em;
-    width: 80px;
+    padding: 8px;
+    width: 100px;
+    top: 10px;
     z-index: 1;
 }
 .dropdown-content > div {
@@ -59,9 +75,6 @@ img {
     right: 0;
     z-index: 1;
 }
-.container {
-    position: relative;
-}
 h2 {
     text-align: center;
 }
@@ -70,8 +83,9 @@ h2 {
     grid-template-columns: 1fr;
     gap: 10px;
 }
-aside:nth-child(2) {
+aside {
     text-align: center;
+    z-index: 10;
 }
 .product-info {
     display: flex;
@@ -94,8 +108,9 @@ aside:nth-child(2) {
 }
 .heart {
     position: absolute;
-    bottom: 70px;
-    right: 5px;
+    font-size: 1.5rem;
+    bottom: 50px;
+    right: 15px;
 }
 #link {
     color: black;
@@ -103,7 +118,7 @@ aside:nth-child(2) {
 }
 .container-3 {
     display: grid;
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
  } 
  .info {
     display: flex;
@@ -131,7 +146,7 @@ table.table-1, tr, th, td {
     width: 500px;
     background-color: hsla(219, 59%, 68%, 0.659);
     padding: 8px;
-    /* box-shadow: ; */
+    box-shadow: ;
 } */
 .copyright {
     text-align: center;
@@ -171,7 +186,7 @@ h5 {
     border: 2px solid black;
     margin: 5px;
     padding: 5px;
-    background-color: hsl(16, 81%, 88%);
+    background: radial-gradient(hsl(16, 81%, 88%), rgb(247, 183, 160));
 }
 .item-1:nth-child(1) {
     display: flex;
@@ -185,7 +200,7 @@ h5 {
     display: block;
     /* margin: auto; */
     border-radius: 10px;
-    width: 500px;
+    width: 250px;
     background-color: rgb(247, 183, 160);
     padding: 8px;
     box-shadow: 2px 2px 2px gray;
@@ -233,9 +248,8 @@ th {
 input:hover {
  background-color: rgb(247, 183, 160);
 }
-h1:hover {
-    /* transform: scale(1.1); */
-    color: hsla(219, 59%, 68%, 0.659);
+.heart:hover {
+    transform: scale(1.2);
 }
 .drop-btn:hover .dropdown-content {
     display: block;
@@ -243,16 +257,23 @@ h1:hover {
 
 /* breakpoint */
 
-@media (min-width: 640px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
     .header {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
     }
-    /* .header:nth-child(2) {
-        align-items: baseline;
-    } */
+    .logo-title {
+        width: 300px;
+        text-align: end;
+        z-index: 10;
+    }
+    .logo {
+        position: absolute;
+        top: 80px;
+        right: 100px;
+    }
     .search-bar {
         width: 300px;
     }
@@ -290,7 +311,7 @@ h1:hover {
         max-width: 400px;
     }
 }
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
     table {
         visibility: hidden;
         clear: both;
@@ -315,19 +336,36 @@ h1:hover {
         margin: auto;
     }
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .header {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
     }
+    .logo-title {
+        width: 300px;
+        text-align: end;
+        z-index: 10;
+    }
+    .logo {
+        position: absolute;
+        top: 80px;
+        right: 100px;
+    }
     .search-bar {
         width: 300px;
     }
     .container {
-        display: flex;
-        flex-direction: row-reverse;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'aside main';
+    }
+    .main {
+        grid-area: main;
+    }
+    .aside {
+        grid-area: aside;
     }
     .container-2 {
         grid-template-columns: 1fr 1fr 1fr 1fr;
